@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Better Together Online Academy</title>
+    <meta name="description" content="Better Together Online Academy offers online Mathematics, Combined Science and Computer Science lessons in Zimbabwe.">
+    <link rel="icon" href="logo.png" type="image/png">
+
+    <style>
+        :root {
+            --navy: #003366;
+            --blue: #00509e;
+            --deep: #001f3f;
+            --gold: #ffcc00;
+            --bg: #f0f4f8;
+            --text: #333333;
+        }
+
+        * { box-sizing: border-box; }
+
+        html { scroll-behavior: smooth; scroll-padding-top: 70px; }
+
+        body {
+            font-family: "Times New Roman", Times, serif;
+            background-color: var(--bg);
+            color: var(--text);
+            margin: 0;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        h1, h2, h3 { line-height: 1.25; }
+
+        a:focus-visible {
+            outline: 3px solid var(--gold);
+            outline-offset: 3px;
+        }
+
+        /* Header */
+        header {
+            background-color: white;
+            color: var(--navy);
+            text-align: center;
+            padding: 25px 15px;
+            border-bottom: 5px solid var(--gold);
+        }
+
+        header img {
+            width: 190px;
+            max-width: 60%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        header h1 { margin: 0; font-size: 34px; }
+        header p { margin: 8px 0 0; font-size: 20px; }
+
+        /* Navigation */
+        nav {
+            background-color: var(--blue);
+            padding: 12px 10px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            display: inline-block;
+            margin: 4px 10px;
+            font-weight: bold;
+        }
+
+        nav a:hover { color: var(--gold); }
+
+        /* Sections */
+        section { padding: 40px 20px; text-align: center; }
+
+        section h2 { color: var(--navy); font-size: 30px; margin-top: 0; }
+
+        section > p {
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .white { background-color: white; }
+
+        /* Cards */
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 25px;
+        }
+
+        .card {
+            background-color: white;
+            border: 2px solid var(--navy);
+            border-radius: 10px;
+            padding: 25px;
+            width: 280px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .white .card { background-color: var(--bg); }
+
+        .card h3 { color: var(--navy); margin-top: 0; }
+        .card p { margin: 0; }
+
+        /* Enrol */
+        .steps {
+            max-width: 600px;
+            margin: 20px auto;
+            text-align: left;
+            padding-left: 25px;
+        }
+
+        .steps li { margin-bottom: 8px; }
+
+        .table-wrap {
+            max-width: 600px;
+            margin: 25px auto 0;
+            overflow-x: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: white;
+        }
+
+        th, td {
+            border: 1px solid var(--navy);
+            padding: 12px;
+            text-align: left;
+        }
+
+        th { background-color: var(--navy); color: white; }
+
+        caption {
+            font-weight: bold;
+            color: var(--navy);
+            padding-bottom: 8px;
+            text-align: left;
+        }
+
+        /* Contact */
+        .contact { background-color: var(--navy); color: white; }
+        .contact h2 { color: white; }
+
+        .contact a {
+            color: var(--gold);
+            font-weight: bold;
+        }
+
+        .button {
+            display: inline-block;
+            background-color: var(--gold);
+            color: var(--deep) !important;
+            padding: 12px 26px;
+            border-radius: 6px;
+            text-decoration: none;
+            margin-top: 10px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--deep);
+            color: white;
+            text-align: center;
+            padding: 18px;
+        }
+
+        footer p { margin: 4px 0; }
+
+        @media (max-width: 600px) {
+            body { font-size: 17px; }
+            header h1 { font-size: 25px; }
+            section h2 { font-size: 26px; }
+            .card { width: 100%; max-width: 350px; }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            html { scroll-behavior: auto; }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <!-- Save your logo as logo.png in the same folder as this file -->
+        <img src="logo.png" alt="Better Together Online Academy logo">
+        <h1>Better Together Online Academy</h1>
+        <p>Quality Education for a Brighter Future</p>
+    </header>
+
+    <nav aria-label="Main menu">
+        <a href="#home">Home</a>
+        <a href="#courses">Courses</a>
+        <a href="#mission">Our Mission</a>
+        <a href="#why-us">Why Us</a>
+        <a href="#enrol">Enrol</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <main>
+
+        <section id="home">
+            <h2>Welcome to BTOA</h2>
+            <p>Learn Anywhere. Achieve Anything.</p>
+            <p>Quality online education designed to help learners succeed.</p>
+        </section>
+
+        <section id="courses" class="white">
+            <h2>Our Courses</h2>
+            <div class="card-container">
+                <div class="card">
+                    <h3>Mathematics</h3>
+                    <p>Develop strong mathematical skills, understand concepts and solve problems with confidence.</p>
+                </div>
+                <div class="card">
+                    <h3>Combined Science</h3>
+                    <p>Explore Biology, Chemistry and Physics through engaging lessons and practical examples.</p>
+                </div>
+                <div class="card">
+                    <h3>Computer Science</h3>
+                    <p>Learn programming, algorithms, computational thinking and computer applications.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="mission">
+            <h2>Our Mission</h2>
+            <p>To provide accessible and quality online education that empowers learners to achieve their academic goals.</p>
+        </section>
+
+        <section id="why-us" class="white">
+            <h2>Why Choose BTOA?</h2>
+            <div class="card-container">
+                <div class="card">
+                    <h3>Dedicated teachers</h3>
+                    <p>Qualified and dedicated teaching support.</p>
+                </div>
+                <div class="card">
+                    <h3>Flexible learning</h3>
+                    <p>Flexible online lessons that fit your schedule.</p>
+                </div>
+                <div class="card">
+                    <h3>Affordable lessons</h3>
+                    <p>Affordable extra lessons for every learner.</p>
+                </div>
+                <div class="card">
+                    <h3>Personal support</h3>
+                    <p>Personalised academic support when you need it.</p>
+                </div>
+                <div class="card">
+                    <h3>Quality subjects</h3>
+                    <p>Quality Mathematics, Science and Computer Science lessons.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="enrol">
+            <h2>How to Enrol</h2>
+            <ol class="steps">
+                <li>Message us on WhatsApp with the learner's name and form.</li>
+                <li>Choose the subjects you want.</li>
+                <li>Pay the fees using one of our payment methods.</li>
+                <li>Receive your lesson link and start learning.</li>
+            </ol>
+
+            <!-- EDIT: replace the amounts, methods and times below with your real details -->
+            <div class="table-wrap">
+                <table>
+                    <caption>Fees and payment</caption>
+                    <tr><th>Item</th><th>Details</th></tr>
+                    <tr><td>Fees per subject</td><td>US$5 per subject, per month</td></tr>
+                    <tr><td>Payment methods</td><td>EcoCash, cash, bank transfer</td></tr>
+                </table>
+            </div>
+
+            <div class="table-wrap">
+                <table>
+                    <caption>Lesson times</caption>
+                    <tr><th>Days</th><th>Time</th></tr>
+                    <tr><td>Monday to Friday</td><td>00:00 to 00:00</td></tr>
+                    <tr><td>Saturday</td><td>00:00 to 00:00</td></tr>
+                </table>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Contact Us</h2>
+            <p>Join Better Together Online Academy today!</p>
+            <p>WhatsApp: <a href="https://wa.me/263779419153">077 941 9153</a></p>
+            <p>Email: <a href="mailto:Neversithole81@gmail.com">Neversithole81@gmail.com</a></p>
+            <a class="button" href="https://wa.me/263779419153">Chat on WhatsApp</a>
+            <p>Since 2024</p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Better Together Online Academy. All rights reserved.</p>
+        <p>Learning Together, Achieving Together.</p>
+    </footer>
+
+</body>
+</html>
