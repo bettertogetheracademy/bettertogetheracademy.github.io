@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BTOA Dashboard | Better Together Online Academy</title>
+<style>
+:root{--navy:#003366;--blue:#00509e;--deep:#001f3f;--gold:#ffcc00;--bg:#f0f4f8;--text:#263445;--muted:#66768a;--line:#dce5ef}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font-family:"Times New Roman",serif;font-size:17px;line-height:1.5}
+header{background:var(--deep);color:white;padding:20px 5%;border-bottom:5px solid var(--gold)}.head{max-width:1100px;margin:auto;display:flex;justify-content:space-between;align-items:center;gap:15px;flex-wrap:wrap}.brand{font-size:24px;font-weight:bold}.tag{color:#dbe8f5}
+nav{background:var(--blue);padding:10px;text-align:center}nav a{color:white;text-decoration:none;font-weight:bold;margin:5px 12px;display:inline-block}nav a:hover{color:var(--gold)}
+main{max-width:1100px;margin:30px auto;padding:0 18px}.welcome,.card{background:white;border:1px solid var(--line);border-radius:12px;padding:22px;box-shadow:0 3px 12px #001f3f0c}
+h1,h2,h3{color:var(--navy);line-height:1.25}h1{font-size:30px;margin:0 0 8px}h2{font-size:23px;margin:0 0 14px}h3{margin:0 0 7px}.section{margin-top:28px}
+.notice{margin-top:17px;padding:13px 15px;background:#fff8dc;border-left:5px solid var(--gold);border-radius:7px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}.card p{color:var(--muted);margin:5px 0}.icon{font-size:28px;margin-bottom:8px}
+.soon{display:inline-block;margin-top:12px;padding:8px 13px;border:1px solid var(--blue);border-radius:6px;color:var(--blue);font-weight:bold}
+.steps{padding-left:22px}.steps li{margin:7px 0}.button{display:inline-block;background:var(--gold);color:var(--deep);padding:10px 16px;border-radius:6px;text-decoration:none;font-weight:bold;margin-top:12px}
+footer{margin-top:40px;background:var(--deep);color:white;text-align:center;padding:18px}footer p{margin:4px}
+@media(max-width:600px){h1{font-size:25px}.welcome,.card{padding:18px}.brand{font-size:21px}}
+</style>
+</head>
+<body>
+<header><div class="head"><div><div class="brand">BETTER TOGETHER ONLINE ACADEMY</div><div class="tag">Learning Together, Achieving Together.</div></div><div>Since 2024</div></div></header>
+<nav aria-label="Dashboard navigation"><a href="index.html">Home</a><a href="#student">Student Area</a><a href="#teacher">Teacher Area</a><a href="#admin">Administration</a></nav>
+<main>
+<section class="welcome"><h1>BTOA Digital Dashboard</h1><p>Welcome to the digital learning and administration hub of Better Together Online Academy.</p>
+<div class="notice"><strong>Development notice:</strong> This is the first dashboard page. Student accounts, secure sign-in, records and online assessments are not connected yet. Do not enter or publish private student information here.</div></section>
+<section class="section" id="student"><h2>Student Area</h2><div class="grid">
+<article class="card"><div class="icon">📚</div><h3>Learning Materials</h3><p>Access subject notes, exercises and revision resources.</p><span class="soon">Coming soon</span></article>
+<article class="card"><div class="icon">📝</div><h3>Assignments &amp; Tests</h3><p>View assignments, test instructions and submission dates.</p><span class="soon">Coming soon</span></article>
+<article class="card"><div class="icon">📊</div><h3>My Results</h3><p>View marks, teacher feedback and academic progress.</p><span class="soon">Coming soon</span></article>
+</div></section>
+<section class="section" id="teacher"><h2>Teacher Area</h2><div class="grid">
+<article class="card"><div class="icon">👩‍🏫</div><h3>My Classes</h3><p>Organise classes, subjects and learner lists.</p><span class="soon">Coming soon</span></article>
+<article class="card"><div class="icon">📋</div><h3>Marking &amp; Feedback</h3><p>Review learner work and record assessment feedback.</p><span class="soon">Coming soon</span></article>
+</div></section>
+<section class="section" id="admin"><h2>Administration</h2><div class="grid">
+<article class="card"><div class="icon">👥</div><h3>Student Records</h3><p>Manage admissions, registration numbers, classes and subjects.</p><span class="soon">Coming soon</span></article>
+<article class="card"><div class="icon">💳</div><h3>Fees &amp; Payments</h3><p>Maintain fee records, payment history and outstanding balances.</p><span class="soon">Coming soon</span></article>
+<article class="card"><div class="icon">📅</div><h3>Attendance</h3><p>Record lesson attendance and monitor participation.</p><span class="soon">Coming soon</span></article>
+</div></section>
+<section class="section card"><h2>Development plan</h2><ol class="steps"><li>Set up a secure database and administrator account.</li><li>Build student registration and class allocation.</li><li>Add teacher and student sign-in with role-based access.</li><li>Connect learning materials, assignments, fees and results.</li></ol><p><strong>Important:</strong> Secure authentication and database access must be implemented before this portal is used for real student records.</p><a class="button" href="index.html">Return to BTOA website</a></section>
+</main>
+<footer><p>&copy; 2026 Better Together Online Academy. All rights reserved.</p><p>Quality Education for a Brighter Future.</p></footer>
+</body></html>
